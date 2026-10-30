@@ -4,6 +4,7 @@ const CACHE_NAME = "ps2-in-browser-v1";
 const APP_FILES = [
   "./",
   "./index.html",
+  "./player.html",
   "./style.css",
   "./app.js",
   "./manifest.json",
