@@ -1,1 +1,20 @@
 
+{
+  "name": "PS2 IN BROWSER",
+  "short_name": "PS2 BROWSER",
+  "description": "Your personal PlayStation 2 game library.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#080b18",
+  "theme_color": "#080b18",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
