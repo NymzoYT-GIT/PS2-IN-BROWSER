@@ -1,0 +1,13 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="100" fill="#080b18"></rect>
+  <rect x="35" y="35" width="442" height="442" rx="75" fill="#121d3c" stroke="#527cff" stroke-width="12"></rect>
+  <path d="M190 105 L190 390 L245 390 L245 105 Z" fill="#ffffff"></path>
+  <path d="M270 105 L370 105 L410 145 L410 365
+           L370 405 L270 405 L230 365 L230 300
+           L285 300 L285 345 L355 345 L355 165
+           L285 165 L285 230 L230 230 L230 145 Z" fill="#6394ff"></path>
+  <text x="256" y="455" text-anchor="middle" fill="#ffffff" font-size="35" font-family="Arial" font-weight="bold">
+    EMULATOR
+  </text>
+</svg>
