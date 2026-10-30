@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b18">
+  <title>PS2 Gameplay - PS2 IN BROWSER</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body { min-height: 100vh; }
+    .player-page { padding: 25px 5%; }
+    .player-screen {
+      width: 100%;
+      height: min(70vh, 650px);
+      min-height: 350px;
+      background: #000;
+      border: 2px solid #344c7d;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .player-screen iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: #000;
+    }
+    .player-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 15px 0;
+    }
+    .controls-list {
+      line-height: 2;
+      color: #b6c4e5;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="ps-logo">PS2</div>
+      <div>
+        <h1>PS2 GAMEPLAY</h1>
+        <p>BUILT-IN EMULATOR SCREEN</p>
+      </div>
+    </div>
+    <a class="text-link" href="./index.html">← BACK HOME</a>
+  </header>
+
+  <main class="player-page">
+    <span class="eyebrow">PLAYSTATION 2</span>
+    <h2>GAME PLAYER</h2>
+
+    <div class="player-screen">
+      <iframe
+        src="https://playjs.purei.org/"
+        title="Play! PS2 emulator"
+        allow="fullscreen; cross-origin-isolated"
+        allowfullscreen
+        credentialless>
+      </iframe>
+    </div>
+
+    <div class="player-actions">
+      <a class="primary-btn"
+         href="https://playjs.purei.org/"
+         target="_blank"
+         rel="noopener">
+        OPEN OFFICIAL PLAYER
+      </a>
+      <a class="secondary-btn" href="./index.html">
+        BACK TO LIBRARY
+      </a>
+    </div>
+
+    <section class="panel">
+      <h3>How to load a game</h3>
+      <p>Wait for the emulator to finish loading, then use its own file chooser to select your legally obtained game image.</p>
+
+      <h3>Keyboard Controls</h3>
+      <div class="controls-list">
+        D-Pad: Arrow keys<br>
+        Left analog: F, H, T, G<br>
+        Right analog: J, L, I, K<br>
+        Square: A<br>
+        Cross: Z<br>
+        Triangle: S<br>
+        Circle: X<br>
+        Start: Enter<br>
+        Select: Backspace
+      </div>
+    </section>
+  </main>
+</body>
+</html>
