@@ -1,1 +1,372 @@
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080b18;
+  color: #f4f5ff;
+  font-family: Arial, sans-serif;
+}
+
+button, input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.topbar {
+  min-height: 82px;
+  padding: 15px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #10152a;
+  border-bottom: 1px solid #27314e;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+.brand p, .hero p, .muted {
+  color: #929bb7;
+}
+
+.brand p {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.ps-logo {
+  width: 49px;
+  height: 49px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #527cff;
+  border-radius: 12px;
+  color: #76a0ff;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.install-btn, .secondary-btn {
+  background: #202b4a;
+  color: white;
+  border: 1px solid #4967a9;
+  padding: 12px 17px;
+  border-radius: 8px;
+}
+
+.hero {
+  min-height: 340px;
+  padding: 55px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  background: radial-gradient(ellipse at 85% 40%, #233d79, #111a36 48%, #080b18 85%);
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.eyebrow {
+  color: #6c9cff;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.hero h2 {
+  font-size: clamp(36px, 6vw, 66px);
+  line-height: 1.03;
+  margin: 18px 0;
+}
+
+.hero h2 span {
+  color: #6998ff;
+}
+
+.hero p {
+  line-height: 1.7;
+  max-width: 460px;
+}
+
+.hero-console {
+  width: 230px;
+  height: 175px;
+  background: linear-gradient(145deg, #30384b, #090b10 70%);
+  border: 2px solid #59627a;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px #000a;
+  transform: perspective(500px) rotateY(-15deg);
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 18px;
+}
+
+.console-light {
+  width: 9px;
+  height: 9px;
+  background: #5a9aff;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #448aff;
+}
+
+.console-text {
+  font-size: 11px;
+  color: #aebbd8;
+  line-height: 1.5;
+  text-align: right;
+}
+
+.primary-btn {
+  border: 0;
+  border-radius: 7px;
+  padding: 14px 22px;
+  color: white;
+  background: linear-gradient(100deg, #3468db, #6949da);
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 12px;
+}
+
+.primary-btn:hover, .install-btn:hover {
+  filter: brightness(1.2);
+}
+
+.navigation {
+  display: flex;
+  gap: 8px;
+  padding: 16px 6%;
+  background: #0d1222;
+  border-bottom: 1px solid #242e48;
+  overflow-x: auto;
+}
+
+.nav-btn {
+  background: transparent;
+  color: #9da8c4;
+  border: 0;
+  padding: 12px 16px;
+  white-space: nowrap;
+}
+
+.nav-btn.active {
+  color: #79a3ff;
+  border-bottom: 2px solid #648fff;
+}
+
+main > section.page {
+  display: none;
+  padding: 35px 7%;
+  min-height: 340px;
+}
+
+main > section.page.active {
+  display: block;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.section-heading h2 {
+  margin: 8px 0;
+  font-size: 29px;
+}
+
+.counter {
+  color: #91a7dc;
+  font-size: 12px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 17px;
+}
+
+.game-card {
+  background: #141b30;
+  border: 1px solid #283756;
+  border-radius: 12px;
+  padding: 17px;
+  min-width: 0;
+}
+
+.game-cover {
+  height: 130px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #243c74, #10172c);
+  border-radius: 8px;
+  font-size: 35px;
+  color: #8bb1ff;
+  margin-bottom: 14px;
+}
+
+.game-card h3 {
+  overflow-wrap: anywhere;
+  font-size: 15px;
+}
+
+.game-card p {
+  color: #929bb7;
+  font-size: 12px;
+}
+
+.game-card button {
+  width: 100%;
+  margin-top: 7px;
+}
+
+.empty-state, .panel {
+  background: #11182b;
+  border: 1px solid #283756;
+  border-radius: 14px;
+  text-align: center;
+  padding: 38px 20px;
+}
+
+.empty-icon, .large-icon {
+  font-size: 45px;
+  color: #729aff;
+}
+
+.panel {
+  max-width: 650px;
+  margin: auto;
+}
+
+.panel p {
+  color: #9da8c4;
+  line-height: 1.7;
+}
+
+input[type="file"] {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+  color: #cbd5ed;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 13px;
+  margin: 10px 0 15px;
+  color: white;
+  background: #080e1d;
+  border: 1px solid #344568;
+  border-radius: 7px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  background: #000b;
+  display: grid;
+  place-items: center;
+  padding: 15px;
+}
+
+.modal[hidden] {
+  display: none;
+}
+
+.modal-card {
+  width: min(450px, 100%);
+  position: relative;
+  background: #121a30;
+  border: 1px solid #405987;
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.modal-card label {
+  display: block;
+  color: #b4c4e8;
+  font-size: 13px;
+}
+
+.modal-card .primary-btn {
+  width: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  background: transparent;
+  color: white;
+  border: 0;
+  font-size: 28px;
+}
+
+.status {
+  font-size: 13px;
+  color: #8db5ff;
+  overflow-wrap: anywhere;
+}
+
+.text-link {
+  color: #86aaff;
+  display: inline-block;
+  margin: 12px 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #303b57;
+  margin: 25px 0;
+}
+
+footer {
+  padding: 28px;
+  text-align: center;
+  border-top: 1px solid #26314b;
+  color: #7785a7;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+@media(max-width: 650px) {
+  .hero {
+    padding: 40px 7%;
+  }
+
+  .hero-console {
+    display: none;
+  }
+
+  .topbar {
+    padding: 12px 4%;
+  }
+
+  .brand h1 {
+    font-size: 13px;
+  }
+
+  main > section.page {
+    padding: 28px 5%;
+  }
+}
